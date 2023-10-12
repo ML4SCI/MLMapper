@@ -10,5 +10,5 @@ The code was written by Sandeepan Dhoundiyal during the Google Summer of Code (G
     
 </div>
 
-This README describes the preprocessed and curated <a href="https://github.com/sdhoundiyal/MLMapper/tree/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset" target="dataset"> used to train the models described in the <a href="https://medium.com/@dsandeepan995/gsoc23-with-ml4sci-deriving-planetary-surface-composition-from-orbiting-observations-from-46f81885c9be" target="accompanying blogpost">, as well as the code used to train the models.
+This README describes the preprocessed and curated <a href="https://github.com/sdhoundiyal/MLMapper/tree/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset" target="_blank">dataset</a> used to train the models described in the <a href="https://medium.com/@dsandeepan995/gsoc23-with-ml4sci-deriving-planetary-surface-composition-from-orbiting-observations-from-46f81885c9be" target="_blank">accompanying blogpost</a>, as well as the code used to train the models.
 

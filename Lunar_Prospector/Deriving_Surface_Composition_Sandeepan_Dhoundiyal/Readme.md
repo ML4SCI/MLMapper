@@ -27,5 +27,10 @@ The dataset consists of Gamma-ray spectra for 5°×5° sections of the Lunar Sur
 8. Normalized spectrum for each in 5°×5° section <a href="https://github.com/ML4SCI/MLMapper/blob/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset/normalizedSpectraPerSection.npy">datasets/normalizedSpectraPerSection.npy</a> (Counts/minute).
 9. Log-scaled Normalized spectrum for each in 5°×5° section <a href="https://github.com/ML4SCI/MLMapper/blob/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset/logScaledNormalizedSpectraPerSection.npy">datasets/logScaledNormalizedSpectraPerSection.npy</a> (log(Counts/minute)).
 
-The afformentioned data as well as those at subsequent levels of preprocessing are included in a <a href="https://github.com/ML4SCI/MLMapper/blob/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset/GRSFiveDegreeSectionDataset.pkl">pickled Pandas dataframe </a>. Preprocessing levels not mentioned above are described below.
+The afformentioned data as well as those at subsequent levels of preprocessing are included in a <a href="https://github.com/ML4SCI/MLMapper/blob/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset/GRSFiveDegreeSectionDataset.pkl">pickled Pandas dataframe </a>. Preprocessing levels not mentioned above are described below with a brief description of the output as well as their title in the dataframe (and units).
+
+1. The log scaled spectra denosied using a 31-channel wide Savitsky-Golay filter - Denoised Log Scaled Spectra (log(Counts/minute))
+2. The denoised spectra with the continuum removed - Continuum Removed Denoised Log Scaled Spectra (Ratioed log(Counts/minute))
+3. The Continuum removed spectra converted to unit vectors by dividing them with their respective L2-norm - Normalized Continuum Removed Denoised Log Scaled Spectra (Ratioed log(Counts/minute))
+
 

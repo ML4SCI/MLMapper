@@ -15,3 +15,13 @@ This README describes the preprocessed and curated <a href="https://github.com/s
 
 ## Dataset
 
+The dataset consists of Gamma-ray spectra for 5°×5° sections of the Lunar Surface along with abundances of ten elements. Abundances are in Wt% for seven of the ten elements (Al, Ca, Fe, Mg, O, Si, Ti) and in PPM for the others (K, Th, U). The spectra underwent multiple levels of pre-processing, therefore spectra at each level of pre-preprocessing are included in the repository as .npy files (arrays saved/read using Numpy). Each step and the file containing the output from the step (and units) are listed below (check out the blog for details on pre-processing).
+
+1. Number of spectra in each 5°×5° section <a href="https://github.com/ML4SCI/MLMapper/blob/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset/noOfSpectraPerSection.npy">datasets/noOfSpectraPerSection.npy</a> (unitless).
+2. Total time the sensor was active in each 5°×5° section <a href="https://github.com/ML4SCI/MLMapper/blob/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset/totalActiveTimePerSection.npy">datasets/totalActiveTimePerSection.npy</a> (minutes).
+3. Sum of all spectra collected in 5°×5° section <a href="https://github.com/ML4SCI/MLMapper/blob/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset/summedSpectraPerSection.npy">datasets/summedSpectraPerSection.npy</a> (Counts).
+4. Normalized spectrum for each in 5°×5° section <a href="https://github.com/ML4SCI/MLMapper/blob/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset/normalizedSpectraPerSection.npy">datasets/normalizedSpectraPerSection.npy</a> (Counts/minute).
+5. Log-scaled Normalized spectrum for each in 5°×5° section <a href="https://github.com/ML4SCI/MLMapper/blob/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset/logScaledNormalizedSpectraPerSection.npy">datasets/logScaledNormalizedSpectraPerSection.npy</a> (log(Counts/minute)).
+
+The afformentioned data as well as those at subsequent levels of preprocessing are included in a <a href="https://github.com/ML4SCI/MLMapper/blob/main/Lunar_Prospector/Deriving_Surface_Composition_Sandeepan_Dhoundiyal/Final_Spectral_unmixing/Dataset/GRSFiveDegreeSectionDataset.pkl">pickled Pandas dataframe </a>. Preprocessing levels not mentioned above are described below.
+
